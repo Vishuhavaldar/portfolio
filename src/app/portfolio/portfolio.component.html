@@ -1,0 +1,127 @@
+  <!-- Header -->
+<!-- Responsive Header -->
+<header class="fixed top-0 left-0 w-full bg-sky-950 text-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-bold">VISHWANATH HAVALDAR</h1>
+  
+      <!-- Hamburger Button -->
+      <button (click)="toggleMenu()" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+  
+      <!-- Navigation Menu -->
+      <nav [ngClass]="{'hidden': !menuOpen, 'block': menuOpen, 'md:block': true}">
+        <ul
+          class="flex flex-col md:flex-row gap-4 text-sm bg-sky-950 md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto px-4 md:px-0 py-4 md:py-0 z-40 md:z-auto">
+          <li><a href="#about" class="block py-2 md:py-0 hover:text-sky-300">About</a></li>
+          <li><a href="#experience" class="block py-2 md:py-0 hover:text-sky-300">Experience</a></li>
+          <li><a href="#projects" class="block py-2 md:py-0 hover:text-sky-300">Projects</a></li>
+          <li><a href="#skills" class="block py-2 md:py-0 hover:text-sky-300">Skills</a></li>
+          <li><a href="#contact" class="block py-2 md:py-0 hover:text-sky-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero -->
+  <section class="bg-sky-100 text-center py-24 px-4 mt-16">
+    <div class="flex flex-col items-center">
+      <img src="assets/images/myphoto.png" alt="Profile photo" class="w-32 h-32 rounded-full object-cover border-4 border-sky-600 mb-4">
+      <h2 class="text-4xl font-bold text-sky-700 mb-3">Full Stack Developer</h2>
+      <p class="text-gray-700 max-w-2xl">
+        1.5 years of experience building scalable web applications with Angular, React, Spring Boot & more.
+      </p>
+    </div>
+  </section>
+  
+  <!-- About -->
+  <section id="about" class="py-10 px-4 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold text-sky-700 mb-4">About Me</h3>
+    <p class="text-gray-700">
+      I’m a passionate Full Stack Developer experienced in modern frameworks. I love crafting responsive, user-centric solutions with tools like Angular, React, Node.js, and Spring Boot.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-10 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold text-sky-700 mb-4">Experience</h3>
+      <div class="bg-sky-50 p-4 rounded-lg shadow">
+        <h4 class="text-xl font-bold text-gray-800">Mphasis Ltd</h4>
+        <p class="text-sm text-gray-600">Trainee Associate Software Engineer | Oct 2023 – Present</p>
+        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm">
+          <li>Trained in Java Full Stack via Simplilearn</li>
+          <li>Developed full-stack Restaurant App with Angular + Spring Boot</li>
+          <li>Built RESTful APIs for robust frontend-backend communication</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-10 px-4 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold text-sky-700 mb-4">Projects</h3>
+
+    <div class="mb-6">
+      <h4 class="text-lg font-bold text-gray-800">🍽️ Restaurant Food App</h4>
+      <p class="text-sm text-gray-700">
+        Full-stack Angular + Spring Boot app with user/admin panels, food categories, reviews, Razorpay integration.
+      </p>
+    </div>
+
+    <div class="mb-6">
+      <h4 class="text-lg font-bold text-gray-800">📚 Library Management System</h4>
+      <p class="text-sm text-gray-700">
+        Angular + Spring Boot app for book search, borrow/return, and fine payment. Includes admin dashboard.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-lg font-bold text-gray-800">📝 To-Do List App</h4>
+      <p class="text-sm text-gray-700">
+        React + Node.js + MongoDB app for managing tasks with REST APIs and real-time UI updates.
+      </p>
+    </div>
+  </section>
+<!-- Freelance -->
+<section id="freelance" class="py-10 px-4 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold text-sky-700 mb-4">Freelance Work</h3>
+      <div class="bg-sky-50 p-4 rounded-lg shadow">
+        <h4 class="text-xl font-bold text-gray-800">RMB Engineers</h4>
+        <p class="text-sm text-gray-600">Freelance Web Developer</p>
+        <p class="text-gray-700 mt-2 text-sm">
+          Contributed to the development and maintenance of the <a href="https://rmbengineers.com" target="_blank" class="text-sky-600 underline hover:text-sky-800">rmbengineers.com</a> website with a focus on responsive UI and performance optimization.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills -->
+  <section id="skills" class="bg-white py-10 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold text-sky-700 mb-4">Technical Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-700">
+        <div><strong>Languages:</strong> Java, JavaScript, TypeScript, Gosu</div>
+        <div><strong>Frontend:</strong> React, Angular, HTML, CSS, Bootstrap, Tailwind</div>
+        <div><strong>Backend:</strong> Spring Boot, Node.js, Express.js, REST API</div>
+        <div><strong>Database:</strong> MySQL, MongoDB</div>
+        <div><strong>Version Control:</strong> Git, GitHub</div>
+        <div><strong>DevOps:</strong> PCF, Docker, Jenkins, Splunk</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-10 px-4 bg-sky-100 text-center">
+    <h3 class="text-2xl font-semibold text-sky-700 mb-4">Contact</h3>
+    <p class="text-gray-700">Email: vishuhavaldar#64gmail.com</p>
+    <p class="text-gray-700">LinkedIn: linkedin.com/in/your-profile</p>
+    <p class="text-gray-700">GitHub: github.com/your-username</p>
+  </section>
+
+  <footer class="bg-white text-center py-4 mt-4 border-t">
+    <p class="text-sm text-gray-500">© 2025 VISHWANATH HAVALDAR All rights reserved.</p>
+  </footer>
